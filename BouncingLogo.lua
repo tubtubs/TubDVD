@@ -135,7 +135,7 @@ local function IsFrameOffscreen(frame)
     return false -- Frame is onscreen
 end
 
-elapsed = 0.25 + (math.random() * 0.75)
+elapsed = 0
 lastTime = GetTime()
 function BouncingDVD_OnUpdate()
 
