@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: TubDVD
+## Author: |ccf3CE13Ftubtubs 
+## Notes: Bouncing DVD logo when you go AFK
+## SavedVariablesPerCharacter: DVD_Vars
+BouncingLogo.xml
+BouncingLogo.lua
