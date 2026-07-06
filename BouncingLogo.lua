@@ -1,6 +1,5 @@
 local dx = 0.25 + (math.random() * 0.75)
 local dy = 0.25 + (math.random() * 0.75)
-local cornerHits = 0
 local minDelta = 1/60 -- ~60 FPS regardless of actual FPS
 local help = [[TubDVD - Bouncing DVD logo when you go afk
 /tubdvd enable/disable - enable or disable the AFK functionality
