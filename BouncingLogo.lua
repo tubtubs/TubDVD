@@ -113,30 +113,8 @@ function BouncingDVD_OnEvent()
     end
 end
 
-local function IsFrameOffscreen(frame)
-    if not frame then return true end
-    
-    local left = frame:GetLeft()
-    local right = frame:GetRight()
-    local top = frame:GetTop()
-    local bottom = frame:GetBottom()
-    
-    -- If any coordinate is missing, the frame is not yet rendered
-    if not left or not right or not top or not bottom then return true end
-
-    -- Check if completely off-screen in any direction
-    local screenWidth = GetScreenWidth()
-    local screenHeight = GetScreenHeight()
-
-    if right < 0 or left > screenWidth or bottom > screenHeight or top < 0 then
-        return true -- Frame is offscreen
-    end
-    
-    return false -- Frame is onscreen
-end
-
-elapsed = 0
-lastTime = GetTime()
+local elapsed = 0
+local lastTime = GetTime()
 function BouncingDVD_OnUpdate()
 
     --DEFAULT_CHAT_FRAME:AddMessage("Running...")
