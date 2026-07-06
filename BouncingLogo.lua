@@ -1,5 +1,5 @@
-local dx = 1
-local dy = 1
+local dx = 0.25 + (math.random() * 0.75)
+local dy = 0.25 + (math.random() * 0.75)
 local cornerHits = 0
 local minDelta = 1/60 -- ~60 FPS regardless of actual FPS
 local help = [[TubDVD - Bouncing DVD logo when you go afk
@@ -135,7 +135,7 @@ local function IsFrameOffscreen(frame)
     return false -- Frame is onscreen
 end
 
-elapsed = 1
+elapsed = 0.25 + (math.random() * 0.75)
 lastTime = GetTime()
 function BouncingDVD_OnUpdate()
 
@@ -162,7 +162,7 @@ function BouncingDVD_OnUpdate()
             dx = -1
             hitX = true
         elseif x - (frameWidth / 2) <= 0 then
-            dx = 1
+            dx = 0.25 + (math.random() * 0.75)
             hitX = true
         end
 
@@ -170,7 +170,7 @@ function BouncingDVD_OnUpdate()
             dy = -1
             hitY = true
         elseif y - (frameHeight / 2) <= 0 then
-            dy = 1
+            dy = 0.25 + (math.random() * 0.75)
             hitY = true
         end
 
